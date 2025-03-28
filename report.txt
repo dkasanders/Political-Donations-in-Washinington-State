@@ -1,0 +1,56 @@
+I work at my University doing data entry for our Advancement department. I was responsible for updating and maintaining records that were essential for fundraising and reaching out to donors. This hands-on experience exposed me to the intricate world of fundraising, and I became fascinated by the patterns and trends you were able to piece apart through donation records. Inspired by this, I wanted to take a look at fundraising patterns for elections, specifically in Washington State.
+For this project, I looked at [INSERT DATASET REFERENCE]. The dataset contained fundraising from election years 2007 to fundraising for elections in 2027. To narrow down the dataset, we will look at data between election years 2008 to 2024.
+
+The data orignates from cash and in-kind contributions made to Washington State Candidates and Political candidates as repoted to the PDC on forms C3, C4, and Schedule C.
+
+
+In looking at this dataset, there were various null values in certain fields that sparked alarm for further investigation. After looking into it further, the null values are due to that field not being applicable to that donation. For example, donations made to a particular party that weren't tied to a specific office election had the [OFFICE] attribute noted as null. The null values in the dataset seem to indicate that the respective attribute wasn't applicable to the source material or didn't apply to the nature of the donation rather than any necessary data being missing.
+
+The two questions I aim to answer are the following: 
+
+1) In a solid blue state, do Democrats continually outperform Republicans in fundraising?
+
+Before looking into the data, I hypothesised that Democrats do outperform Republicans in fundraising, however Republicans are more incentivized to donate when the opposition is the incumbent or holds more political power. 
+
+Democrats consistently outfundraise Republicans in Washington state. Across the years, the Democrats have recieved 1,285,969 donations with an average donation amount of $287.08. Republicans have received less donations with only 866,973 donations. However, on average the amount donated is greater than the Democrat average. Republican donations are on average $316.38. Constructing a t-test to see if there is statistically significant difference between the average donation amounts of Democrats and Republicans, we get a t-value of -6.518 (with 2,152,940 degrees of freedom) decisively rejecting the null hypothesis of the sample means of both Republican and Democrat donation amounts being equal (p-value less than 0.00001).
+
+(PHOTO OF HISTOGRAM OF BOTH REPUBLICAN AND DEMOCRAT PARTY DONATIONS ACROSS 2008-2024)
+
+I looked at total donations per election year across both Republican and Democrats to see how donations for each party across the years. Adjusting for inflation, we construct the following graph with regression line. 
+
+(PHOTO OF SCATTER PLOT AND REGRESSION LINE OF FUNDING BY PARTY OVER ELECTION YEARS 2008 - 2024)
+
+Democrats consistently raise more money compared to Republicans annually. 
+Despite a positive coeficient for Democrat fundraising over time and a negative coeficient for Republicans, neither of the regressions proved statistically significant to indicate that the amount of fundraising either party gains is changing over the years.
+
+The only times Republicans raised more money compared to Democrats was in 2021 and 2022, years when Democrats were in control of the Presidency. We notice despite in both of these years Democrats having more donations compared to Republicans, Republicans on average
+donated more compared to Republicans (mean of 306.61 to 222.59). Looking at histograms of donation amounts across both years, we observe that Republican donation amounts are more right-skewed to higher donation amounts, attributing to the higher mean donation amount
+Republicans have compared to Democrats.
+
+In 2021, Republican donation efforts were focuesd on a variety of County positions. For every county position, Republicans managed to 
+out fundraise Democrats, with Democrats only donating for County Council Member Position 5. This was an election between Republican Sam Low and Democrat Brandy Donaghy.
+This was an election that Republicans ultimately won with 60.59% of the vote.
+
+In 2022 there's a similar trend. Democrats had more donations, but on average were less compared to Republicans. Fundraising was spent around State Representative positions, with Democrats raising $10,327,785.30 for State Representative elections and Republicans raising $10,034,664.10.
+
+
+
+
+2) In what areas do Democrats consistently outperform Republicans and vice versa?
+
+Before looking into the data, I hypothesised that Democrats outperform in statewide fundraising for elections, while Republicans outperform in local elections.
+
+Democrats consistently outperform Republicans in high-profile offices, while Republicans do better in local elections. Looking at all of the donationed tailored for a specific office, we can categorically split up the offices into two categories: high profile elections and low profile elections. High profile elections were defined as statewide and legislative offices that have impact at the state level. These include positions such as Governor, Attorney General, and Public Lands Commisioner. On the other hand, low profile elections refer to local offices, which primarily cover governmental power to a specific city or county. This includes positions such as Mayor, City Council Member, and School Director. Categorizing the offices by high profile and low profile allows us to look at the fundraising trends for Democrats and Republicans.
+
+(PHOTO OF CHART SHOWING HIGH PROFILE ELECTIONS AND LOW PROFILE ELECTIONS, AND COUNTS OF WHICH PARTY OUT FUNDRAISED WHO)
+
+Looking at donation trends across cities we notice that in the top five cities with the highest donation counts, Democrats increase their share of total donations when looking at election years. In what areas do Republicans increase their share?
+Ballotpedia defines "pivot counties" as counties that voted for Obama in 2008 and 2012, but have voted for Trump in 2016. Looking at the donations in these counties during election years, there is a steady pattern of more Republican donations in these locations,
+especially noting the sharp increase in donations during the 2020 election cycle. 
+
+This dataset showcased that Democrats consistently outfundraise Republicans in Washington State, both in total donations and number of contributions. However, Republican donors tend to give larger individual donation amounts, and have outfundraised Democrats in the 2021 and 2022 election cycles. Additionally, while Democrats dominate fundraising for high-profile statewide elections, Republicans perform better in local races. Looking at the differences between how much Democrats fundraise on average compared to Republicans between these two election type categories, we see that Democrats on average outfundraise Republicans by roughly 1 million dollars for high-profile offices, while Republicans on average outfundraise Democrats by roughly $29,000.
+
+These insights could help to highlight the strategic differences in fundraising between the two parties. The Democratic party is able to rely on a broader state-wide level of support, and are able to get more low-dollar donations compared to the Republican party. On the other hand, Republican fundraising efforts appear to be more concentrated among high-dollar contributors, channeled into local elections. Understanding these patterns could inform future political fundraising strategies, and how to navigate political fundraising in a state with a solid tilt to one political party. 
+
+
+Ballotpedia source: https://ballotpedia.org/Pivot_Counties_in_Washington
