@@ -1,5 +1,7 @@
 # Political Fundraising Analysis in Washington State
 
+## Read the report [here.](report.pdf)
+
 ## Overview
 
 Analysed political donations in Washington State to get insights on where Democrats and Republicans outperform one another.
