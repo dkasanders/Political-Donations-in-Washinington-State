@@ -28,4 +28,4 @@ The full report is written in LaTeX and includes:
 - Visualizations comparing office-level fundraising efforts.
 
 ## Contact
-Dylan Kasanders - dkasanders00@gmail.com - [dylankasanders.com](dylankasanders.com)
+Dylan Kasanders - dkasanders00@gmail.com
